@@ -1,0 +1,28 @@
+{
+  "name": "traveler-website",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @frontend dev",
+    "build": "pnpm --filter @frontend build",
+    "start": "pnpm --filter @frontend start",
+    "backend": "cd apps/backend && python manage.py runserver"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "postcss": "latest",
+    "autoprefixer": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest",
+    "@types/react": "latest",
+    "@types/node": "latest"
+  }
+}
