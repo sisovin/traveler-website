@@ -18,7 +18,10 @@
     "react-dom": "latest",
     "tailwindcss": "latest",
     "postcss": "latest",
-    "autoprefixer": "latest"
+    "autoprefixer": "latest",
+    "axios": "latest",
+    "font-awesome": "latest",
+    "google-fonts": "latest"
   },
   "devDependencies": {
     "typescript": "latest",
