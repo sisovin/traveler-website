@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',  # Add the accounts app
     'prisma',  # Add the prisma app
+    'rest_framework',  # Add the rest_framework app
 ]
 
 MIDDLEWARE = [
@@ -125,3 +126,13 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Add REST framework settings
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
+
+# Add custom user model
+AUTH_USER_MODEL = 'accounts.CustomUser'
